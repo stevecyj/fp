@@ -1,0 +1,23 @@
+{
+  "name": "fp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "simple-example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevecyj/fp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevecyj/fp/issues"
+  },
+  "homepage": "https://github.com/stevecyj/fp#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "ramda": "^0.29.1"
+  }
+}
