@@ -29,5 +29,14 @@ let sentences = R.map(words)
 //   }, xs)
 // }
 
-let filterQs = R.filter(R.test(/q/i))
+let filterQs = R.filter(R.match(/q/i))
 console.log(filterQs(["hello", "world", "queen", "jojo"]))
+
+// 彩蛋 1:
+// ============
+// 包裹数组的 `slice` 函数使之成为 curry 函数
+// //[1,2,3].slice(0, 2)
+// var slice = undefined
+
+let slice = R.curry((start, end, xs) => xs.slice(start, end))
+console.log(slice(0)(2)([1, 2, 3]))
