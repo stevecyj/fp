@@ -1,4 +1,5 @@
-const R = require("ramda")
+// const R = require("ramda")
+import * as R from "ramda"
 function add(a, b, c) {
   return a + b + c
 }
@@ -18,7 +19,7 @@ function curry(func) {
   }
 }
 
-let curryAdd = curry(add)
+export let curryAdd = curry(add)
 console.log(curryAdd(1, 2, 3))
 console.log(curryAdd(1)(2, 3))
 console.log(curryAdd(1)(2)(3))
