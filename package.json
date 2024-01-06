@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "simple-example.js",
+  "type":"module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "ramda": "^0.29.1"
+  },
+  "devDependencies": {
+    "vitest": "^1.1.3"
   }
 }

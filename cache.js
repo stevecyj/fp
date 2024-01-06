@@ -1,4 +1,4 @@
-const R = require("ramda")
+import * as R from "ramda"
 
 function add(a, b) {
   console.log("do add")
@@ -6,7 +6,7 @@ function add(a, b) {
 }
 
 const resolver = (...args) => JSON.stringify(args)
-const memorizeAdd = R.memoizeWith(R.identity, add)
+export const memorizeAdd = R.memoizeWith(R.identity, add)
 console.log(memorizeAdd(1, 2))
 console.log(memorizeAdd(1, 2))
 console.log(memorizeAdd(1, 2))
