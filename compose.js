@@ -23,7 +23,7 @@ function subtract5(x) {
 }
 
 // pipe
-export let add = R.pipe(add1, add2, add3)
+export let add = R.compose(add1, add2, add3)
 console.log(add(str)) // hello123
 
 // 手写pipe

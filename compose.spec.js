@@ -2,9 +2,9 @@ import { it, expect, describe } from "vitest"
 import { add, pipeLine } from "./compose"
 
 describe("compose add", () => {
-  it("should be hello123", () => {
+  it("should be hello321", () => {
     const result = add("hello")
-    expect(result).toEqual("hello123")
+    expect(result).toEqual("hello321")
   })
 })
 
